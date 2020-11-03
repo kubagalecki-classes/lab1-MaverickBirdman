@@ -8,11 +8,14 @@ class Wektor2D
   double getY(){return y;}
   Wektor2D(double newX, double newY){x=newX; y=newY;}
 
- friend Wektor2D operator+( Wektor2D &v1,  Wektor2D &v2)
+friend Wektor2D operator+( Wektor2D &v1,  Wektor2D &v2)
  {
      return Wektor2D(v1.x+v2.x, v1.y+v2.y);
-  // v1.
-  // return *this;
+ }
+
+ friend double operator*( Wektor2D &v1,  Wektor2D &v2)
+ {
+     return v1.x*v2.x+v1.y*v2.y;
  }
 
   private:
@@ -32,6 +35,6 @@ Wektor2D v2{2., 2.}; // Konstruktor nadający współrzędne
 
 Wektor2D sum = v1 + v2; // dodawanie wektorów
 
-//double prod = v1 * v2; // iloczyn skalarny
+double prod = v1 * v2; // iloczyn skalarny
 return 0;
 }
