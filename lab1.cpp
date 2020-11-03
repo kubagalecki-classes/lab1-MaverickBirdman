@@ -59,4 +59,12 @@ int main()
     // v1.print_norm();
 
     return 0;
+}   Wektor2D v2{2., 2.};    // Konstruktor nadający współrzędne
+                            // cout << endl<<v2.x << endl << v2.y << endl;
+    Wektor2D sum = v1 + v2; // dodawanie wektorów
+                            // cout << sum.x << endl;
+                            // cout << sum.y << endl;
+    double prod = v1 * v2;  // iloczyn skalarny
+                            // cout << prod;
+    return 0;
 }
