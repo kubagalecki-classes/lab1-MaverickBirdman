@@ -29,7 +29,7 @@ public:
              << endl;
     }
     ~Wektor2D() // destruktor
-    //niszczy obiekty od ostatniego stworzonego
+    // niszczy obiekty od ostatniego stworzonego
     {
         cout << endl << "Obiekt " << name << " zostal zniszczony." << endl;
     }
@@ -39,10 +39,9 @@ public:
     string name;
 };
 
-class Informer{
+class Informer
+{
 public:
-
-
 };
 
 int main()
